@@ -6,6 +6,11 @@
 
 ![bash-prompt-editor-2](screencap-2.gif)
 
+## 🚀 Live Demo
+
+This application is automatically deployed to GitHub Pages. Visit the live demo at:
+https://thejusticeman.github.io/bash-prompt-editor/
+
 ## Development Checklist
 - [x] Store commands
 - [x] Reset button
@@ -42,3 +47,20 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## 📦 Deployment
+
+This project is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` or `master` branch. The deployment is handled by a GitHub Actions workflow (`.github/workflows/deploy.yml`).
+
+### Manual Deployment
+
+If you need to deploy manually or want to enable GitHub Pages for your fork:
+
+1. Ensure GitHub Pages is enabled in your repository settings:
+   - Go to Settings > Pages
+   - Under "Build and deployment", select "GitHub Actions" as the source
+
+2. Push to the `main` or `master` branch, or trigger the workflow manually:
+   - Go to Actions tab > Deploy to GitHub Pages > Run workflow
+
+The workflow will automatically build the project and deploy the `dist` folder to GitHub Pages.
